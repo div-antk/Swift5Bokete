@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     // 検索ワードの値を元に画像を持ってくる
     // pixabay.com
     
-    func geyImages(keyword:String) {
+    func getImages(keyword:String) {
       // APIKEY 19683077-8a212c49b30399ac1ec759a27
       let url = "https://pixabay.com/api/?key=19683077-8a212c49b30399ac1ec759a27&q=\(keyword)"
       
@@ -47,14 +47,45 @@ class ViewController: UIViewController {
       AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON { (response) in
         
         switch response.result {
+        
         case .success:
           let json:JSON = JSON(response.data as Any)
           let imageString = json["hits"][self.count]["webformatURL"].string
           self .odaiImageView.sd_setImage(with: URL(string: imageString!), completed: nil)
+          
         case .failure(let error):
+          
           print(error);
         }
       }
     }
+    getImages(keyword: "funny")
   }
+  
+  @IBAction func nextOdai(_ sender: Any) {
+    count += 1
+    // 検索窓が空だった場合
+    if searchTextView.text == "" {
+      getImages(keyword: "funny")
 
+    } else {
+      getImages(keyword: searchTextView.text!)
+    }
+  }
+  
+  @IBAction func searchAction(_ sender: Any) {
+    
+    self.count = 0
+    if searchTextView.text == "" {
+      getImages(keyword: "funny")
+
+    } else {
+      getImages(keyword: searchTextView.text!)
+    }
+  }
+  
+  
+  @IBAction func next(_ sender: Any) {
+    performSegue(withIdentifier: next, sender: nil)
+  }
+}
