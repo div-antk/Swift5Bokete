@@ -34,6 +34,7 @@ class ViewController: UIViewController {
     }
   }
     
+    
     // 検索ワードの値を元に画像を持ってくる
     // pixabay.com
     

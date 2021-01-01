@@ -100,11 +100,17 @@
                                 <rect key="frame" x="226" y="747" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="back:" destination="sWZ-NI-pVg" eventType="touchUpInside" id="yef-hG-veR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cha-Dg-X4Q">
                                 <rect key="frame" x="68" y="748" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="シェアする"/>
+                                <connections>
+                                    <action selector="share:" destination="sWZ-NI-pVg" eventType="touchUpInside" id="OSP-2l-k8p"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="画像でひとこと" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yc0-eD-Ixh">
                                 <rect key="frame" x="69" y="500" width="277" height="164"/>
@@ -117,6 +123,10 @@
                         <viewLayoutGuide key="safeArea" id="2YV-al-iuh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="commentLabel" destination="Yc0-eD-Ixh" id="RKT-Ni-B6H"/>
+                        <outlet property="resultImageView" destination="kgu-x8-oS8" id="b8K-5c-OJF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awU-LB-rAM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
