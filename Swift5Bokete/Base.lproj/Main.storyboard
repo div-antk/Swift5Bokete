@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="528.98550724637687" y="88.392857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Share View Controller-->
         <scene sceneID="ArH-2N-Nwr">
             <objects>
-                <viewController id="sWZ-NI-pVg" sceneMemberID="viewController">
+                <viewController id="sWZ-NI-pVg" customClass="ShareViewController" customModule="Swift5Bokete" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hv1-jq-51p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B8FBD11259F3DD40016A77E /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FBD10259F3DD40016A77E /* ShareViewController.swift */; };
 		3BB6A1B22599460300FCB082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB6A1B12599460300FCB082 /* AppDelegate.swift */; };
 		3BB6A1B42599460300FCB082 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB6A1B32599460300FCB082 /* SceneDelegate.swift */; };
 		3BB6A1B62599460300FCB082 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB6A1B52599460300FCB082 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B8FBD10259F3DD40016A77E /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		3BB6A1AE2599460300FCB082 /* Swift5Bokete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift5Bokete.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB6A1B12599460300FCB082 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BB6A1B32599460300FCB082 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				3BB6A1B12599460300FCB082 /* AppDelegate.swift */,
 				3BB6A1B32599460300FCB082 /* SceneDelegate.swift */,
 				3BB6A1B52599460300FCB082 /* ViewController.swift */,
+				3B8FBD10259F3DD40016A77E /* ShareViewController.swift */,
 				3BB6A1B72599460300FCB082 /* Main.storyboard */,
 				3BB6A1BA2599460600FCB082 /* Assets.xcassets */,
 				3BB6A1BC2599460600FCB082 /* LaunchScreen.storyboard */,
@@ -88,7 +91,6 @@
 				A203319B3E84107D2ED28A11 /* Pods-Swift5Bokete.debug.xcconfig */,
 				E6A0001068DC3A1580CCB40B /* Pods-Swift5Bokete.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,6 +210,7 @@
 			files = (
 				3BB6A1B62599460300FCB082 /* ViewController.swift in Sources */,
 				3BB6A1B22599460300FCB082 /* AppDelegate.swift in Sources */,
+				3B8FBD11259F3DD40016A77E /* ShareViewController.swift in Sources */,
 				3BB6A1B42599460300FCB082 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
